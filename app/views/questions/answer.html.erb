@@ -1,0 +1,12 @@
+<div class= "container-narrow">
+<h1>Coach answer</h1>
+<div class=chat-bubble>
+<small>You:<small>
+<p class="mb-0"><%= params[:question] %></p>
+</div>
+<div class="chat-bubble answer">
+<small>Coach:<small>
+<p class="mb-0"><%= @answer %></p>
+</div>
+<%= link_to "Ask another question", ask_path, class: "btn btn-link back-link" %>
+</div>

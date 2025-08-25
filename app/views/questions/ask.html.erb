@@ -1,0 +1,14 @@
+<div class="container-narrow">
+<h1>Stupid Coaching</h1>
+<p class="test-muted">Ask your coach anything</p>
+
+<form action="<%= answer_path %>" method="get" data-turbo="false" class="ask-form">
+  <input
+  type="text"
+  name="question"
+  class="form-control"
+  placeholder="Type your question"
+  value="<%= params[:question]%>">
+  <button type="submit" class="btn btn-primary">Ask</button>
+</form>
+</div>

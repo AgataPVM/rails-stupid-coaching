@@ -13,3 +13,57 @@
  *= require_tree .
  *= require_self
  */
+/* Paleta simples */
+:root{
+  --gray-50:#f8f9fa;
+  --gray-300:#dee2e6;
+  --text-muted:#6c757d;
+  --yellow-50:#fff9db;
+  --yellow-400:#ffd43b;
+}
+
+/* Base */
+html, body { height: 100%; }
+body {
+  background: var(--gray-50);
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  line-height: 1.5;
+}
+
+/* Um container mais estreito p/ as páginas */
+.container-narrow {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 40px 16px;
+}
+
+/* Títulos */
+h1 { font-size: 2rem; margin-bottom: 1rem; }
+
+/* Formulário da /ask */
+.ask-form {
+  display: flex;
+  gap: .5rem;
+}
+.ask-form input[type="text"] {
+  flex: 1;
+}
+
+/* “Balões” de mensagens na /answer */
+.chat-bubble {
+  background: #fff;
+  border-left: 6px solid var(--gray-300);
+  border-radius: 6px;
+  padding: 16px;
+  margin: 16px 0;
+  box-shadow: 0 1px 2px rgba(0,0,0,.05);
+}
+.chat-bubble small { color: var(--text-muted); display:block; margin-bottom:.25rem; }
+
+.chat-bubble.answer {
+  background: var(--yellow-50);
+  border-left-color: var(--yellow-400);
+}
+
+/* Link “Ask another question” encostado à esquerda */
+.back-link { padding-left: 0; }
